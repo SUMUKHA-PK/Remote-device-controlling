@@ -26,3 +26,10 @@ Future Additions :
 
 * AI (voice control) to run the commands
 * Run an application without opening directories
+
+
+Contributions and Stylings : 
+* Proper javascript / typescript stylings
+* Use **4 TABS** and not spaces for indentation
+
+## :thumbsup: ! All set to go 
