@@ -31,5 +31,6 @@ Future Additions :
 Contributions and Stylings : 
 * Proper javascript / typescript stylings
 * Use **4 TABS** and not spaces for indentation
+* Create your own branch for each issue and merge the branch
 
 ## :thumbsup: ! All set to go 
