@@ -30,5 +30,5 @@ Future Additions :
 
 Contributions and Stylings :
 * Proper javascript / typescript stylings
-* Use **TABS** and not spaces for indentation
+* Use **TABS** of length 4 spaces and not spaces for indentation
 * Create your own branch for each issue and merge the branch
