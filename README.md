@@ -28,9 +28,7 @@ Future Additions :
 * Run an application without opening directories
 
 
-Contributions and Stylings : 
+Contributions and Stylings :
 * Proper javascript / typescript stylings
-* Use **4 TABS** and not spaces for indentation
+* Use **TABS** and not spaces for indentation
 * Create your own branch for each issue and merge the branch
-
-## :thumbsup: ! All set to go 
