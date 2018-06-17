@@ -23,5 +23,6 @@ Frameworks and languages used: <br/>
 
 
 Future Additions :
+
 * AI (voice control) to run the commands
 * Run an application without opening directories
