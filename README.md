@@ -9,10 +9,19 @@ Goal : <br/>
 
 Working : <br/>
 
-* Working of the application requires the devices to be connected to a network. We will start out by working with LANs and then extend to the internet.
-* Application from any device will be able to trigger any other device on the same network to perform any of the tasks supported.
+* All the devices will be connected to central server (CDN) later, which will register the device. Each device will be given a certain id and each session will have a token.
+* Each set of devices can be connected to each other by creating a room.
+* Application from any device will be able to trigger any other device on the same network (room) to perform any of the tasks supported.
 * Conflict resolution will be based on protocols that will be defined later based on convenience.
 
 Frameworks and languages used: <br/>
 
-TO BE FILLED
+* The server will be using a Node.js (scale up to GO if required) and express (scale up to rectify if required)
+* The mobile apps will be written using react-native
+* Computer (Desktop versions) will be using
+* Web Application however cannot have the remote controlling features as js is a scripting language. Web Application however will be created eventually as a social network.
+
+
+Future Additions :
+* AI (voice control) to run the commands
+* Run an application without opening directories
