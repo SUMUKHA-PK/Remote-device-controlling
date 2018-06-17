@@ -16,16 +16,16 @@ Working : <br/>
 
 Frameworks and languages used: <br/>
 
-* The server will be using a Node.js (scale up to GO if required) and express (scale up to rectify if required)
-* The mobile apps will be written using react-native
-* Computer (Desktop versions) will be using
-* Web Application however cannot have the remote controlling features as js is a scripting language. Web Application however will be created eventually as a social network.
-
+* The server will be using a Node.js (scale up to GO if required) and express (scale up to rectify if required).
+* The mobile apps will be written using react-native.
+* Computer (Desktop versions) will be using Web Applications.
+* The Web Application cannot have remote controlling features as JavaScript is a scripting language.Thus, it will be eventually made as a social network.
 
 Future Additions :
 
-* AI (voice control) to run the commands
-* Run an application without opening directories
+* AI (voice control) to run the commands. (Google APIs / Self developed)
+* Application can be run from anywhere and not only the working directory.
+* Web applicaton as a social network for file sharing and other simple tasks.
 
 
 Contributions and Stylings :
