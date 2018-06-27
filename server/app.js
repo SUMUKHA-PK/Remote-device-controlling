@@ -17,6 +17,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+runWindows(["C:/Program Files (x86)/Windows Media Player/wmplayer.exe","D:/TV Shows/Big Bang Theory/The Big Bang Theory Season 3 (2009-2010) BluRay 720p [RoHiT]/The Big Bang Theory S3E01 - The Electric Can Opener Fluctuation [RoHiT].mkv"])
+
 app.use('/', index);
 
 // catch 404 and forward to error handler
