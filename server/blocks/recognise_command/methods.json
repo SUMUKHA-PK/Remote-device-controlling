@@ -1,7 +1,7 @@
 {
     "windows" : {
         "multimedia" : {
-            "default"  : "C:/Program Files (x86)/Windows Media Player/wmplayer.exe"
+            "overide"  : "C:/Program Files (x86)/Windows Media Player/wmplayer.exe"
         }
     },
     "linux" : {
