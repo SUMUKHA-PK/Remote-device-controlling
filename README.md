@@ -32,3 +32,5 @@ Contributions and Stylings :
 * Proper javascript / typescript stylings
 * Use **TABS** of length 4 spaces and not spaces for indentation
 * Create your own branch for each issue and merge the branch
+
+## :thumbsup: ! All set to go 
