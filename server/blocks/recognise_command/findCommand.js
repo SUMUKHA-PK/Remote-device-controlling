@@ -1,6 +1,8 @@
 var fs = require('fs')
 
 function findCommand (fileType, os){
+
+    // Parse JSON file methods.json to get the file command
     let data = JSON.parse(fs.readFileSync((__dirname + '/methods.json'), 'utf8'))
 
     if(fileType === "exe")
