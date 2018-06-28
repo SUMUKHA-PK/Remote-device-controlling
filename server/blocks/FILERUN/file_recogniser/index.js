@@ -1,3 +1,5 @@
+// Gets the extension name of the file to be run
+
 const fs = require('fs')
 
 module.exports = function (file) {

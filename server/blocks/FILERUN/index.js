@@ -1,9 +1,11 @@
+// Calls file_recogniser, command recogniser and runs the application by calling application runner
+
 var getExtensionF = require('./file_recogniser')
 var getCommandF = require('./recognise_command')
 var runFileF = require('./application_runner')
 
 module.exports = function(file){
-    
+
     // get file extension (mkv)
     var getExtension = getExtensionF(file)
 

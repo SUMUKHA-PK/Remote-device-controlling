@@ -1,3 +1,5 @@
+// Called by server/blocks/FILERUN/recognise_command/index.js
+
 var fs = require('fs')
 
 function findCommand (fileType, os){
@@ -8,8 +10,8 @@ function findCommand (fileType, os){
     // Windows uses default types
     if(!(Object.keys(data[os]).indexOf(fileType)+1))
         return null
-    else if(data[os][fileType]['overide']){
-        return data[os][fileType]['overide']
+    else if(data[os][fileType]['override']){
+        return data[os][fileType]['override']
     }
 
     return null

@@ -1,3 +1,5 @@
+// Called by server/blocks/FILERUN/recognise_command/index.js
+
 var os = "windows"
 if (process.platform === "darwin") {
     os = "mac"
