@@ -1,4 +1,4 @@
-const { execFile } = require("child_process")
+const { exec, execFile } = require("child_process")
 const log = require("../../logger")
 
 // Example input to the path
@@ -8,16 +8,18 @@ module.exports = function (pathList) {
 
 	var executable = pathList.splice(0, 1)[0]
 
-	if (pathList.length === 0)
-		execFile(executable, (err, stdout, stderr) => {
+	if (pathList.length === 0) {
+		executable = `"${executable}"`
+		exec(executable, (err, stdout, stderr) => {
 			//  logging implemntation to be done
 			log(stdout, stderr, err)
 		}).unref()
-
-	// Create a child process in the users computer to run the program
-	execFile(`${executable}`, pathList, (err, stdout, stderr) => {
-		//  logging implemntation to be done
-		log(stdout, stderr, err)
-	}).unref()
+	}
+	else
+		// Create a child process in the users computer to run the program
+		execFile(executable, pathList, (err, stdout, stderr) => {
+			//  logging implemntation to be done
+			log(stdout, stderr, err)
+		}).unref()
 
 }
