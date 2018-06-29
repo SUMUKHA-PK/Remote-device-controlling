@@ -17,6 +17,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 
+require('./blocks/FILERUN')("D:/TV Shows/Big Bang Theory/The Big Bang Theory Season 3 (2009-2010) BluRay 720p [RoHiT]/The Big Bang Theory S3E01 - The Electric Can Opener Fluctuation [RoHiT].mkv")
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
 	var err = new Error('Not Found');

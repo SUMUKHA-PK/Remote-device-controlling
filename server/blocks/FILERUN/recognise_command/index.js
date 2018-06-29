@@ -5,5 +5,5 @@ var os = require('./getos')
 
 module.exports = function (fileType) {
     var findCommand = require('./findCommand')(fileType, os)
-    return findCommand
+    return { findCommand : findCommand, os : os }
 }

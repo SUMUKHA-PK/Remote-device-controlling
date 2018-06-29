@@ -4,7 +4,7 @@ var getExtensionF = require('./file_recogniser')
 var getCommandF = require('./recognise_command')
 var runFileF = require('./application_runner')
 
-module.exports = function(file){
+module.exports = function (file) {
 
     // get file extension (mkv)
     var getExtension = getExtensionF(file)
@@ -13,11 +13,18 @@ module.exports = function(file){
     var getCommand = getCommandF(getExtension)
 
     // Run the file
-    if(getCommand === null){
-        runFileF([file])
+    if (getCommand.os === "windows")
+        if (getCommand.findCommand === null && getExtension === "exe") {
+            runFileF([file])
+        }
+        else if(getCommand.findCommand === null){
+            runFileF([file])
+        }
+        else {
+            runFileF([getCommand.findCommand, file])
+        }
+    
+    else if (getCommand.os === "linux"){
+        runFileF(['xdg-open', `"${file}"`])
     }
-    else{
-        runFileF([getCommand, file])
-    }
-
 }
