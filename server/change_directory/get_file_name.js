@@ -1,4 +1,5 @@
 function get_file_name(cur_path){
+    //This is called by /server/change_directory/index.js
     var len = cur_path.length;
     var name = "";
     for(var i=len-1;i>=0;i--){

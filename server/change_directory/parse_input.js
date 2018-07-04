@@ -1,4 +1,5 @@
 function parse_input(command){
+    //This is called by /server/change_directory/index.js
     //Here the command is expected either to be "cd --filename--" or "cd .." or "ls"
     var obj ={
         result : res,

@@ -37,7 +37,4 @@ function change_directory(currect_dir,command){
     }
 }
 
-/*
-To Do:
-2.get_size(recheck)
-*/
+// Technically this is all done. Testing must be done.
