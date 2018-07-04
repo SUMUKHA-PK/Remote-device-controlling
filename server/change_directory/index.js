@@ -4,13 +4,21 @@ function change_directory(currect_dir,command){
     var change_name = require('./change_name');
     var get_time = require('./get_time');
     var get_size = require('./get_size');
+    const { exec } = require('child_process');
 
-    var result = parse_input(command);
-    var res = result[0];
-    var arg = result[1];
+    var obj = parse_input(command);
+    var res = obj.result;
+    var arg = obj.argument;
     var folder = new Folder();
-    if((res)==-1){
-        ls(currect_dir);
+    if((res)==-1){ 
+        exec('ls', (error, stdout, stderr) => {                       // Executes "ls" and returns results
+            if (error) {                                              // Error display protocol on error
+              console.error(`exec error: ${error}`);
+              return;
+            }
+            console.log(`stdout: ${stdout}`);
+            console.log(`stderr: ${stderr}`);
+          });
     }
     else{
         if(arg == "previous"){
@@ -32,5 +40,4 @@ function change_directory(currect_dir,command){
 /*
 To Do:
 2.get_size(recheck)
-5.ls(recheck)
 */

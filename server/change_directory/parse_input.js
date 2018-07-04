@@ -1,5 +1,9 @@
 function parse_input(command){
     //Here the command is expected either to be "cd --filename--" or "cd .." or "ls"
+    var obj ={
+        result : res,
+        argument : arg
+    };
     var res;
     var arg="null";
     if(command.includes("cd")){
@@ -15,5 +19,5 @@ function parse_input(command){
     else if (command.includes("ls")){
         res = -1;                       
     }
-    return [res,arg];
+    return obj;
 }
