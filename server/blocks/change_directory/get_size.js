@@ -4,13 +4,8 @@ function get_size(folder_path){
     var command = "du -hs " + folder_path;
     var output = "";
     exec(command, (error, stdout, stderr) => {                      
-            if (error) {                                             
-              console.error(`exec error: ${error}`);
-              return;
-            }
             output += stdout;                       // the stdout of the command contains the size of the directory
-            console.log(`stdout: ${stdout}`);
-            console.log(`stderr: ${stderr}`);
+            log(stdout, stderr, err)
           });
     var result = get_actual_size(output);
     return result;

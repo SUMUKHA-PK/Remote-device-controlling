@@ -12,12 +12,7 @@ function change_directory(currect_dir,command){
     var folder = new Folder();
     if((res)==-1){ 
         exec('ls', (error, stdout, stderr) => {                       // Executes "ls" and returns results
-            if (error) {                                              // Error display protocol on error
-              console.error(`exec error: ${error}`);
-              return;
-            }
-            console.log(`stdout: ${stdout}`);
-            console.log(`stderr: ${stderr}`);
+            log(stdout, stderr, err)
           });
     }
     else{
