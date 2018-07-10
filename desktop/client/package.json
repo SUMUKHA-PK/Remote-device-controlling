@@ -1,0 +1,11 @@
+{
+  "name": "client-remote-control",
+  "version": "0.0.1",
+  "description": "Client App for remote-control",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "author": "prajval",
+  "license": "MIT"
+}
