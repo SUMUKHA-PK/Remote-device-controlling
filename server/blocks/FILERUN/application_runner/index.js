@@ -21,5 +21,4 @@ module.exports = function (pathList) {
 			//  logging implemntation to be done
 			log(stdout, stderr, err)
 		}).unref()
-
 }
