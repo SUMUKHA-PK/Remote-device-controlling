@@ -37,7 +37,7 @@ const dir = function (currentDirectory) {
     })
 
     foldersData = foldersData.map((folder) => {
-        return new Folder(folder, cwd + '/' + folder)
+        return new Folder(folder, currentDirectory + '/' + folder)
     })
 }
 
