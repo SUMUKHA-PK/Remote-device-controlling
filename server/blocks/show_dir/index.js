@@ -43,6 +43,10 @@ const dir = function (currentDirectory) {
     foldersData = foldersData.map((folder) => {
         return new Folder(folder, currentDirectory + '/' + folder)
     })
+
+    console.log(filesData,foldersData);
 }
+
+dir("/home/some_guyy/pk/git/Remote-device-controlling");
 
 module.exports = dir
