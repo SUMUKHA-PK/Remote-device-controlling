@@ -1,5 +1,5 @@
 class File {
-    constructor( name, fileType, size){
+    constructor( name, fileType){
         this.name = name;
         this.fileType = fileType;
     }

@@ -1,6 +1,6 @@
 class Folder {
     //This is called by /server/change_directory/index.js
-    constructor(name,size,timeCreated,path){
+    constructor(name,path){
         this.name = name;
         this.path = path;
     }
