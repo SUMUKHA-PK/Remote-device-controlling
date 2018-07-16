@@ -39,9 +39,6 @@ const dir = function (currentDirectory) {
     foldersData = foldersData.map((folder) => {
         return new Folder(folder, cwd + '/' + folder)
     })
-
-    console.log(filesData, foldersData)
 }
 
-
-dir('D:/TV Shows/13 Reasons Why/S1')
+module.exports = dir
